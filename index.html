@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cadastro de Filmes - Codeverse</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/post.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de filmes</h1>
+            <p>Preencha os dados abaixo de acordo com seu filme favorito!</p>
+        </header>
+
+        <main>
+            <section>
+                <h1>Cadastre seu filme!</h1>
+        <form id="form-filme">
+
+            <label for="title">Título do Filme:</label>
+            <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+            <label for="genero">Gênero</label>
+            <input id="genero" name="genero" type="text" required />
+
+            <label for="ano">Ano</label>
+            <input id="ano" name="ano" type="number" required />
+
+             <label for="diretor">Diretor</label>
+            <input id="diretor" name="diretor" type="text" required />
+
+             <label for="nota">Nota</label>
+            <input id="nota" name="nota" type="number" min="0" max="10" step="0.1" />
+
+            <label for="imageUrl">URL da imagem (opcional):</label>
+            <input id="imageUrl" name="imageUrl" type="url" />
+            <br>
+            <button type="submit">Enviar filme</button>
+
+        </form>
+
+        <p id="resposta"></p>
+            </section>
+        </main>
+
+        <footer>
+        <p>Página desenvolvida para a prática de formulários HTML.</p>
+    </footer>
+
+
+    </body>
+</html>
